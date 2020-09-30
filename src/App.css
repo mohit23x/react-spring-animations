@@ -13,3 +13,13 @@ body {
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   background: #000;
 }
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: #0b0b0b;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
