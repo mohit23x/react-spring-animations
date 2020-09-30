@@ -1,7 +1,8 @@
 import React from "react";
-import Home from "../component/Home";
 
+const Home = React.lazy(() => import("../component/Home"));
 const BasicDrag = React.lazy(() => import("../component/BasicDrag"));
+const DragAndBack = React.lazy(() => import("../component/DragAndBack"));
 
 export const entry = [
   {
@@ -13,5 +14,10 @@ export const entry = [
     title: "Basic Drag",
     path: "basic-drag",
     component: BasicDrag,
+  },
+  {
+    title: "Drag and Back",
+    path: "basic-and-back",
+    component: DragAndBack,
   },
 ];
