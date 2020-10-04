@@ -5,7 +5,7 @@ import { routes } from "./routes";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <React.Suspense fallback={<h1>loading...</h1>}>
           {routes()}
